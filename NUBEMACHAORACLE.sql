@@ -31,16 +31,17 @@ CREATE TABLE usuario (
     )
 );
 
-SELECT sequence_name FROM user_sequences WHERE sequence_name = 'USUARIO_SEQ';
+-- SELECT sequence_name FROM user_sequences WHERE sequence_name = 'USUARIO_SEQ';
 
-DROP SEQUENCE usuario_seq;
+-- DROP SEQUENCE usuario_seq;
 
-CREATE SEQUENCE usuario_seq START WITH 1 INCREMENT BY 1;
+-- CREATE SEQUENCE usuario_seq START WITH 1 INCREMENT BY 1;
 
 DESCRIBE usuario;
 
-SELECT usuario_seq.nextval FROM dual;
+-- SELECT usuario_seq.nextval FROM dual;
 
+select * from usuario;
 
 -- Crear otras tablas...
 -- Tabla citas
